@@ -3,30 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>개요 :: 기술 문서 모음</title>
+    <title>Main Page :: 기술 문서 모음</title>
+    <meta name="description" content="My description">
     <meta name="generator" content="Antora 3.1.9">
 <!-- https://realfavicongenerator.net/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="../../docs/modules/ROOT/images/asciidoctor-logo.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+<link rel="manifest" href="/site.webmanifest">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="stylesheet" href="../assets/css/site.css">
-<link rel="stylesheet" href="../assets/css/search.css">
-<link rel="stylesheet" href="../assets/css/custom.css">
-<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-    <script>var uiRootPath = '../assets'</script>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="../../assets/css/search.css">
+<link rel="stylesheet" href="../../assets/css/custom.css">
+<link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+    <script>var uiRootPath = '../../assets'</script>
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">기술 문서 모음</a>
+      <a class="navbar-item" href="/">
+       기술 문서 모음</a>
             <div class="navbar-item search hide-for-print">
                 <div id="search-field" class="field has-filter">
-                    <input id="search-input" type="text" placeholder="검색어를 입력해주세요."  autofocus>
-                        <input checked style="display: none" type="checkbox" data-facet-filter="component:index-docs">
+                    <input id="search-input" type="text" placeholder="Search the docs">
+                        <input checked style="display: none" type="checkbox" data-facet-filter="component:spring-docs">
                 </div>
             </div>
         <button class="navbar-burger" data-target="topbar-nav">
@@ -35,54 +37,31 @@
         <span></span>
       </button>
     </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="index-docs" data-version="">
+<div class="nav-container" data-component="spring-docs" data-version="1">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="index.html">메인 목차</a></h3>
+    <h3 class="title"><a href="index.html">spring-docs-title</a></h3>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="0">
+  <li class="nav-item is-current-path is-active" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="#:">개요</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#:">공식 문서 번역</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../spring-docs/1/index.html">Spring 문서</a>
-  </li>
-</ul>
+  <li class="nav-item is-current-page is-active" data-depth="1">
+    <a class="nav-link" href="index.html">spring-docs index</a>
   </li>
 </ul>
   </li>
 </ul>
   </nav>
-</div>
-<div class="nav-panel-explore" data-panel="explore">
-  <ul class="components">
-    <li class="component">
-      <a class="title" href="../spring-docs/1/index.html">spring-docs-title</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../spring-docs/1/index.html">1</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component is-current">
-      <a class="title" href="index.html">메인 목차</a>
-      <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="index.html">default</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
 </div>
     </div>
   </aside>
@@ -90,11 +69,11 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="index.html" class="home-link is-current"></a>
+  <a href="../../index-docs/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="index.html">메인 목차</a></li>
-    <li><a href="index.html">개요</a></li>
+    <li><a href="index.html">spring-docs-title</a></li>
+    <li><a href="index.html">spring-docs index</a></li>
   </ul>
 </nav>
 </div>
@@ -103,14 +82,102 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">개요</h1>
+<h1 class="page">Main Page</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#template-for-the-read-the-docs-tutorial-in-asciidoc">Template for the Read the Docs tutorial in AsciiDoc</a></li>
+<li><a href="#how-to-use-this-template">How to use this template</a></li>
+<li><a href="#credits">Credits:</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>본 문서는 "기술 문서 모음"에 대한 설명을 담고 있습니다.</p>
+<p>My description</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="template-for-the-read-the-docs-tutorial-in-asciidoc"><a class="anchor" href="#template-for-the-read-the-docs-tutorial-in-asciidoc"></a>Template for the Read the Docs tutorial in AsciiDoc</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This template is designed to guide you in creating comprehensive documentation that showcases examples and is inspired by <a href="https://docs.readthedocs.io/en/stable/examples.html">the Read the Docs example</a>. It utilizes AsciiDoc markup and Kroki diagramming, which allow you to create clear and concise diagrams to enhance your documentation.</p>
+</div>
+<div class="paragraph">
+<p>This template is readily available on GitHub and makes use of the Antora framework, which generates a well-organized site structure. The framework also comes with examples that demonstrate how to use AsciiDoc markup and Kroki diagramming to create effective documentation.</p>
+</div>
+<div class="paragraph">
+<p>By utilizing this template, you can create documentation that is easy to understand and visually appealing, making it an excellent resource for users seeking information on your project.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-use-this-template"><a class="anchor" href="#how-to-use-this-template"></a>How to use this template</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>in github, create repo using this template <code><a href="https://github.com/man-chi/example-antora-basic" class="bare">https://github.com/man-chi/example-antora-basic</a></code></p>
+</li>
+<li>
+<p>in IDE, create new project from github repo</p>
+</li>
+<li>
+<p>in source code, edit <code>.readthedocs.yaml:</code></p>
+</li>
+<li>
+<p>update <code>site: title:</code> $YOUR_TITLE</p>
+</li>
+<li>
+<p>update `sources: url: $YOUR_GITHUB_REPO_URL</p>
+</li>
+<li>
+<p>in <code>antora/docs/modules/ROOT/pages</code>, create new.adoc</p>
+</li>
+<li>
+<p>in <code>nav.adoc</code>, create new navigation menu under <code>section/new.adoc</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="credits"><a class="anchor" href="#credits"></a>Credits:</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This particular template owes its existence to the hard work and contribution of some truly exceptional open-source contributors, who have put in their valuable time and effort to make it a reality.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/readthedocs/readthedocs.org"> Readthedocs - hosting service for documentation</a></p>
+</li>
+<li>
+<p><a href="https://asciidoc.org"> Asciidoc - plain text markup language for writing content</a></p>
+</li>
+<li>
+<p><a href="https://asciidoctor.org"> AsciiDoctor - text processor for parsing AsciiDoc format</a></p>
+</li>
+<li>
+<p><a href="https://antora.org"> Antora - documentation site generator for asciidoctor</a></p>
+</li>
+<li>
+<p><a href="https://github.com/asciidoctor/asciidoctor-kroki"> asciidoctor-kroki -  asciidoctor extension for Kroki (diagram as code)</a></p>
+</li>
+<li>
+<p><a href="https://github.com/asciidoctor/asciidoctor-intellij-plugin"> asciidoctor-intellij-plugin - Asciidoc plugin for intellij</a></p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </article>
   </div>
 </main>
 </div>
+<footer class="footer">
+</footer>
 <div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content" onclick="closeModal()">
@@ -201,7 +268,7 @@
         cursor: pointer;
     }
 </style>
-<script src="../assets/js/os-switcher.js"></script>
+<script src="../../assets/js/os-switcher.js"></script>
 <script>
     const navbarEl = document.getElementsByClassName("navbar")[0]
     const toolbarEl = document.getElementsByClassName("toolbar")[0]
@@ -330,12 +397,12 @@
 </script>
 <script>
   window.antora = window.antora || {}
-  window.antora.basePath = '..'
-  window.antora.pagePath = '/index-docs/index.html'
+  window.antora.basePath = '../..'
+  window.antora.pagePath = '/spring-docs/1/index.html'
 </script>
-<script src="../assets/js/site.js"></script>
-<script src="../assets/js/vendor/lunr.js"></script>
-<script src="../assets/js/search-ui.js" id="search-ui-script" data-site-root-path=".." data-snippet-length="100" data-stylesheet="../assets/css/search.css"></script>
-<script async src="../search-index.js"></script>
+<script src="../../assets/js/site.js"></script>
+<script src="../../assets/js/vendor/lunr.js"></script>
+<script src="../../assets/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../assets/css/search.css"></script>
+<script async src="../../search-index.js"></script>
   </body>
 </html>
