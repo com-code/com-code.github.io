@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>기술 모음 :: 기술 모음</title>
+    <title>Kafka 스트림즈 :: 기술 모음</title>
     <meta name="generator" content="Antora 3.1.9">
 <!-- https://realfavicongenerator.net/ -->
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
@@ -12,11 +12,11 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="stylesheet" href="../assets/css/site.css">
-<link rel="stylesheet" href="../assets/css/search.css">
-<link rel="stylesheet" href="../assets/css/custom.css">
-<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-    <script>var uiRootPath = '../assets'</script>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="../../assets/css/search.css">
+<link rel="stylesheet" href="../../assets/css/custom.css">
+<link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+    <script>var uiRootPath = '../../assets'</script>
   </head>
   <body class="article">
 <header class="header">
@@ -26,8 +26,8 @@
        기술 모음</a>
             <div class="navbar-item search hide-for-print">
                 <div id="search-field" class="field has-filter">
-                    <input id="search-input" type="text" placeholder="Search the docs" autofocus>
-                        <input checked style="display: none" type="checkbox" data-facet-filter="component:index-docs">
+                    <input id="search-input" type="text" placeholder="Search the docs">
+                        <input checked style="display: none" type="checkbox" data-facet-filter="component:kafka-docs">
                 </div>
             </div>
         <button class="navbar-burger" data-target="topbar-nav">
@@ -45,21 +45,21 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="index-docs" data-version="">
+<div class="nav-container" data-component="kafka-docs" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="index.html">메인 목차</a></h3>
+    <h3 class="title"><a href="../index.html">Kafka 문서</a></h3>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="0">
+  <li class="nav-item is-current-path is-active" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page is-active" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#:">공식 문서 정리</a>
+    <a class="nav-link" href="index.html">Kafka 스트림즈</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../kafka-docs/index.html">Kafka 문서</a>
+    <a class="nav-link" href="#:">Stream Processing Topology</a>
   </li>
 </ul>
   </li>
@@ -74,22 +74,25 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="index.html" class="home-link is-current"></a>
+  <a href="../../index-docs/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="index.html">메인 목차</a></li>
-    <li><a href="index.html">기술 모음</a></li>
+    <li><a href="../index.html">Kafka 문서</a></li>
+    <li><a href="index.html">Kafka 스트림즈</a></li>
   </ul>
 </nav>
-</div>
+  </div>
   <div class="content">
 <aside class="toc sidebar" data-title="내용" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">기술 모음</h1>
+<h1 class="page">Kafka 스트림즈</h1>
 <div class="paragraph">
-<p>기술 모음에는 기술과 관련된 모든 내용들을 정리하는 공간입니다.</p>
+<p>Kafka를 활용한 데이터 처리 과정에서 데이터 생성을 위한 Producer API와 데이터 소비를 위한 Consumer API를 사용할 수 있습니다.
+그러나 이러한 API를 사용하면 데이터 처리를 위한 추가적인 로직을 개발해야 하며 이는 데이터 처리를 위한 복잡한 로직을 개발해야 한다는 것을 의미합니다.
+Kafka Streams는 이러한 불편함을 도와주는 <strong>클라이언트 라이브러리입</strong>니다.
+또한 Java 애플리케이션에 내장되어 Kafka의 데이터를 처리할 수 있도록 도와주며 Producer API, Consumer API보다 높은 수준의 API를 제공합니다.</p>
 </div>
 </article>
   </div>
@@ -187,7 +190,7 @@
         cursor: pointer;
     }
 </style>
-<script src="../assets/js/os-switcher.js"></script>
+<script src="../../assets/js/os-switcher.js"></script>
 <script>
     const navbarEl = document.getElementsByClassName("navbar")[0]
     const toolbarEl = document.getElementsByClassName("toolbar")[0]
@@ -316,12 +319,12 @@
 </script>
 <script>
   window.antora = window.antora || {}
-  window.antora.basePath = '..'
-  window.antora.pagePath = '/index-docs/index.html'
+  window.antora.basePath = '../..'
+  window.antora.pagePath = '/kafka-docs/kafka-streams/index.html'
 </script>
-<script src="../assets/js/site.js"></script>
-<script src="../assets/js/vendor/lunr.js"></script>
-<script src="../assets/js/search-ui.js" id="search-ui-script" data-site-root-path=".." data-snippet-length="100" data-stylesheet="../assets/css/search.css"></script>
-<script async src="../search-index.js"></script>
+<script src="../../assets/js/site.js"></script>
+<script src="../../assets/js/vendor/lunr.js"></script>
+<script src="../../assets/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../assets/css/search.css"></script>
+<script async src="../../search-index.js"></script>
   </body>
 </html>
